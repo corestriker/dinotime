@@ -7,6 +7,7 @@ import type { RangeValue, Taxon } from './types'
 import SearchBar from './components/SearchBar'
 import MapView from './components/MapView'
 import LegalModal from './components/LegalModal'
+import TaxonPanel from './components/TaxomPanel'
 
 const MAX_MA = 323
 
@@ -157,6 +158,13 @@ export default function App() {
         </div>
       )}
     </div>
+    <TaxonPanel
+  taxon={selected}
+  onClose={() => {
+    setSelected(null)
+    setHighlighted(null)
+  }}
+/>
 
     {/* Footer */}
     <footer className="shrink-0 px-8 py-3 border-t border-white/10 flex items-center gap-6" style={{ background: '#110e1a' }}>

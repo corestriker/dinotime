@@ -2,7 +2,7 @@
 
 > **Explore 323 million years of prehistoric life** — an interactive timeline of 11,000+ dinosaurs and reptiles with fossil locations, Wikipedia integration, and silhouettes from PhyloPic.
 
-![DinoTime Preview](https://raw.githubusercontent.com/YOUR-USERNAME/dinotime/main/preview.png)
+![DinoTime Preview](https://raw.githubusercontent.com/corestriker/dinotime/main/preview.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Data: PBDB](https://img.shields.io/badge/Data-Paleobiology%20Database-blue)](https://paleobiodb.org)
