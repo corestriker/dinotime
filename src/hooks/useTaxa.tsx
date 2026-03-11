@@ -12,10 +12,12 @@ export function useTaxa(): UseTaxaResult {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
 
+    const base = import.meta.env.BASE_URL
+
     useEffect(() =>{
-        fetch('/data/taxa.json')
+        fetch(`${base}data/taxa.json`)
             .then(res => {
-                if (!res.ok) throw new Error('Datei nicht gefunden')
+                if (!res.ok) throw new Error('File not found')
                 return res.json()
             })
             .then((data: Taxon[]) => {
