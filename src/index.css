@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+#root {
+  height: 100%;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  background: #0d0b14;
+  scrollbar-gutter: stable;
+}
+
+/* Cinzel für den Titel */
+.font-display {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+/* Inter als Basis-Font */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #2dd4bf20;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2dd4bf60;
+}
