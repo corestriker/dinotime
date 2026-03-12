@@ -52,8 +52,10 @@ export default function App() {
   }
 
   function handleSelect(taxon: Taxon) {
-    setSelected(taxon)
     setHighlighted(taxon.name)
+    if (view === 'list') {
+      setSelected(taxon)
+    }
   }
   
   if (loading) return (

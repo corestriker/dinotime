@@ -43,11 +43,13 @@ export default function TaxonPanel({ taxon, onClose }: Props) {
 
         {/* Bild */}
         {taxon.imageUrl && (
-          <div className={`w-full ${taxon.isPhylopic ? 'bg-neutral-100 p-6' : ''}`}>
+          <div className={`w-full flex items-center justify-center ${
+            taxon.isPhylopic ? 'bg-white/10 p-4' : 'bg-black'
+          }`}>
             <img
               src={taxon.imageUrl}
               alt={taxon.name}
-              className={`w-full ${taxon.isPhylopic ? 'object-contain max-h-40' : 'object-cover h-52'}`}
+              className="max-w-full max-h-48 object-contain"
             />
           </div>
         )}
