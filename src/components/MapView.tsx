@@ -48,24 +48,6 @@ export default function MapView({ taxa, onSelect, highlighted, onReady }: Props)
     return null
   }
 
-  function OpenPopup({ position }: { position: [number, number] }) {
-    const map = useMap()
-    useEffect(() => {
-      map.eachLayer(layer => {
-        if ((layer as any).getLatLng) {
-          const latlng = (layer as any).getLatLng()
-          if (
-            Math.abs(latlng.lat - position[0]) < 0.001 &&
-            Math.abs(latlng.lng - position[1]) < 0.001
-          ) {
-            (layer as any).openPopup?.()
-          }
-        }
-      })
-    }, [map, position])
-    return null
-  }
-
   return (
     <div className="flex-1 flex min-h-0">
 
